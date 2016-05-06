@@ -35,7 +35,9 @@ The following code registers a schema that binds schema "demo" and DemoViewContr
 
 ## Usage
 
-In your AppDelegate.h:
+Be sure to include WMRouter.h.
+
+In your AppDelegate.m:
 ```objc
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
   if([[WMRouter sharedRouter] openURL:url])
