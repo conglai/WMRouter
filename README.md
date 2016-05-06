@@ -26,9 +26,7 @@ The following code registers a schema that binds schema "demo" and DemoViewContr
 @implementation DemoViewController
 
 +(void)load{
-  [[WMRouter sharedRouter] addMap:[WMRouterMap mapWithSchema:@"demo" class:self options:@{
-                                                                                                                        WMRouterOptionTransitionTypeKey:WMRouterOptionTransitionTypePush
-                                                                                                                        }]];
+  [[WMRouter sharedRouter] addMap:[WMRouterMap mapWithSchema:@"demo" class:self options:@{WMRouterOptionTransitionTypeKey:WMRouterOptionTransitionTypePush}]];
 }  
 
 @end                                                                                                                      
