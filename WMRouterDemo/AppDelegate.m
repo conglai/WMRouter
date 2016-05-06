@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WMRouter.h"
 
 @interface AppDelegate ()
 
@@ -29,6 +30,12 @@
   self.window.rootViewController = nav;
   
   
+  return YES;
+}
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+  if([[WMRouter sharedRouter] openURL:url])
+    return NO;
   return YES;
 }
 

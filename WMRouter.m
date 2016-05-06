@@ -261,21 +261,22 @@ Class property_getClass(objc_property_t property){
 }
 
 
--(void)openURL:(NSURL *)URL{
+-(BOOL)openURL:(NSURL *)URL{
   for (NSString* key in rules) {
     if([self matchURL:URL withSchema:key]){
       WMRouterRule* rule = [rules valueForKey:key];
       [rule openWithParameters:[self paramsFromURL:URL withSchema:rule.schema]];
-      return;
+      return YES;
     }
   }
   for (NSString* key in maps) {
     if([self matchURL:URL withSchema:key]){
       WMRouterMap* map = [maps valueForKey:key];
       [map openWithParameters:[self paramsFromURL:URL withSchema:map.schema]];
-      return;
+      return YES;
     }
   }
+  return NO;
 }
 
 @end

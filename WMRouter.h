@@ -66,7 +66,7 @@ extern NSString* URLDecode(NSString* str);
 -(void)addMapWithSchema:(NSString*)schema class:(Class) class;
 -(void)addMap:(WMRouterMap*)map;
 
--(void)openURL:(NSURL*)URL;
+-(BOOL)openURL:(NSURL*)URL;
 
 
 @end
