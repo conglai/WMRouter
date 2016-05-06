@@ -10,4 +10,7 @@
 
 @interface DemoViewController : UIViewController
 
+@property(nonatomic,strong) NSString * titleString;
+@property(nonatomic,strong) UIColor* backgroundColor;
+
 @end

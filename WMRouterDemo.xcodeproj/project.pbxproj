@@ -10,9 +10,11 @@
 		4A4B9D9E1CDB507600B2AF04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B9D9D1CDB507600B2AF04 /* main.m */; };
 		4A4B9DA11CDB507600B2AF04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B9DA01CDB507600B2AF04 /* AppDelegate.m */; };
 		4A4B9DA41CDB507600B2AF04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B9DA31CDB507600B2AF04 /* ViewController.m */; };
-		4A4B9DA71CDB507600B2AF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B9DA51CDB507600B2AF04 /* Main.storyboard */; };
 		4A4B9DA91CDB507600B2AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B9DA81CDB507600B2AF04 /* Assets.xcassets */; };
 		4A4B9DAC1CDB507600B2AF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B9DAA1CDB507600B2AF04 /* LaunchScreen.storyboard */; };
+		4A4B9DB61CDB50E600B2AF04 /* WMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B9DB51CDB50E600B2AF04 /* WMRouter.m */; };
+		4A4B9DB91CDB521A00B2AF04 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B9DB81CDB521A00B2AF04 /* DemoViewController.m */; };
+		4AA726081CDC3D79009C9FBF /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA726071CDC3D79009C9FBF /* Alert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +24,15 @@
 		4A4B9DA01CDB507600B2AF04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4A4B9DA21CDB507600B2AF04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4A4B9DA31CDB507600B2AF04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4A4B9DA61CDB507600B2AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A4B9DA81CDB507600B2AF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4B9DAB1CDB507600B2AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A4B9DAD1CDB507600B2AF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4B9DB41CDB50E600B2AF04 /* WMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRouter.h; sourceTree = "<group>"; };
+		4A4B9DB51CDB50E600B2AF04 /* WMRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRouter.m; sourceTree = "<group>"; };
+		4A4B9DB71CDB521A00B2AF04 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		4A4B9DB81CDB521A00B2AF04 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		4AA726061CDC3D79009C9FBF /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
+		4AA726071CDC3D79009C9FBF /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +49,7 @@
 		4A4B9D901CDB507600B2AF04 = {
 			isa = PBXGroup;
 			children = (
+				4A4B9DB31CDB50D200B2AF04 /* WMRouter */,
 				4A4B9D9B1CDB507600B2AF04 /* WMRouterDemo */,
 				4A4B9D9A1CDB507600B2AF04 /* Products */,
 			);
@@ -58,15 +66,18 @@
 		4A4B9D9B1CDB507600B2AF04 /* WMRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4A4B9DB71CDB521A00B2AF04 /* DemoViewController.h */,
+				4A4B9DB81CDB521A00B2AF04 /* DemoViewController.m */,
 				4A4B9D9F1CDB507600B2AF04 /* AppDelegate.h */,
 				4A4B9DA01CDB507600B2AF04 /* AppDelegate.m */,
 				4A4B9DA21CDB507600B2AF04 /* ViewController.h */,
 				4A4B9DA31CDB507600B2AF04 /* ViewController.m */,
-				4A4B9DA51CDB507600B2AF04 /* Main.storyboard */,
 				4A4B9DA81CDB507600B2AF04 /* Assets.xcassets */,
 				4A4B9DAA1CDB507600B2AF04 /* LaunchScreen.storyboard */,
 				4A4B9DAD1CDB507600B2AF04 /* Info.plist */,
 				4A4B9D9C1CDB507600B2AF04 /* Supporting Files */,
+				4AA726061CDC3D79009C9FBF /* Alert.h */,
+				4AA726071CDC3D79009C9FBF /* Alert.m */,
 			);
 			path = WMRouterDemo;
 			sourceTree = "<group>";
@@ -77,6 +88,15 @@
 				4A4B9D9D1CDB507600B2AF04 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A4B9DB31CDB50D200B2AF04 /* WMRouter */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B9DB41CDB50E600B2AF04 /* WMRouter.h */,
+				4A4B9DB51CDB50E600B2AF04 /* WMRouter.m */,
+			);
+			name = WMRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +158,6 @@
 			files = (
 				4A4B9DAC1CDB507600B2AF04 /* LaunchScreen.storyboard in Resources */,
 				4A4B9DA91CDB507600B2AF04 /* Assets.xcassets in Resources */,
-				4A4B9DA71CDB507600B2AF04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA726081CDC3D79009C9FBF /* Alert.m in Sources */,
 				4A4B9DA41CDB507600B2AF04 /* ViewController.m in Sources */,
 				4A4B9DA11CDB507600B2AF04 /* AppDelegate.m in Sources */,
+				4A4B9DB61CDB50E600B2AF04 /* WMRouter.m in Sources */,
+				4A4B9DB91CDB521A00B2AF04 /* DemoViewController.m in Sources */,
 				4A4B9D9E1CDB507600B2AF04 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +180,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A4B9DA51CDB507600B2AF04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A4B9DA61CDB507600B2AF04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A4B9DAA1CDB507600B2AF04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -302,6 +316,7 @@
 				4A4B9DB21CDB507600B2AF04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
